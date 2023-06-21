@@ -1,0 +1,55 @@
+.modale {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.564);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.modale .modal-box {
+  background-color: rgb(253, 253, 60);
+  border-radius: 15px;
+  padding: 30px;
+  width: 60%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.modale .modal-box .close-modal {
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.modale .modal-box input {
+  margin-bottom: 30px;
+  border-radius: 5px;
+  border: solid 2px black;
+  padding: 10px;
+}
+.modale .modal-box textarea {
+  resize: none;
+  border-radius: 5px;
+  border: solid 2px black;
+  margin-bottom: 10px;
+}
+.modale .modal-box .apply-box {
+  display: flex;
+  justify-content: space-around;
+}
+.modale .modal-box .apply-box .apply-button {
+  padding: 10px;
+  border-radius: 15px;
+}
+.modale .modal-box .apply-box #create-note {
+  color: white;
+  background-color: rgb(52, 52, 182);
+}
+.modale .modal-box .apply-box #clear-all {
+  color: white;
+  background-color: rgb(163, 39, 39);
+}/*# sourceMappingURL=modal-dialog.component.css.map */

@@ -1,0 +1,63 @@
+.modale {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.564);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+
+    .modal-box {
+        background-color: rgb(253, 253, 60);
+        border-radius: 15px;
+        padding: 30px;
+        width: 60%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+
+        .close-modal {
+            margin: 0 auto;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        input {
+            margin-bottom: 30px;
+            border-radius: 5px;
+            border: solid 2px black;
+            padding: 10px;
+        }
+        textarea{
+            resize: none;
+            border-radius: 5px;
+            border: solid 2px black;
+            margin-bottom: 10px;
+        }
+
+        .apply-box {
+            display: flex;
+            justify-content: space-around;
+
+            .apply-button {
+                padding: 10px;
+                border-radius: 15px;
+            }
+
+            #create-note {
+                color: white;
+                background-color: rgb(52, 52, 182);
+            }
+
+            #clear-all {
+                color: white;
+                background-color: rgb(163, 39, 39);
+            }
+        }
+        
+    }
+}

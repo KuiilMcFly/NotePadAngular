@@ -1,0 +1,18 @@
+<div class="container">
+    <p>Crea le tue Note!</p>
+    <div class="button-container">
+        <button id="add-button" class="add-clear" (click)="OpenModal()">Nuova Nota</button>
+        <button id="clear-all-button" class="add-clear">Elimina tutte le Note</button>
+    </div>
+    <app-modal-dialog></app-modal-dialog>
+    <div class="card-container">
+        <ul>
+            <li *ngFor="let note of notes; let i = index">
+              <a (keyup)="saveNote(i)">
+                <h2>{{ note.title }}</h2>
+                <p>{{ note.content }}</p>
+              </a>
+            </li>
+          </ul>
+    </div>
+</div>
