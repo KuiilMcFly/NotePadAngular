@@ -9,7 +9,7 @@ import { ModalDialogComponent } from '../modal-dialog/modal-dialog.component';
 })
 export class CardsContainerComponent implements OnInit {
 
-  @ViewChild(ModalDialogComponent) modaleDialogComponent! : ModalDialogComponent;
+  @ViewChild(ModalDialogComponent, {static: false}) modaleDialogComponent! : ModalDialogComponent;
   
   notes = [
     { title: 'Note 1', content: 'Content 1' },
